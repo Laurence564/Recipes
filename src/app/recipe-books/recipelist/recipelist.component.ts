@@ -24,6 +24,6 @@ export class RecipelistComponent {
   @Output() recipeWasSelected = new EventEmitter<Recipe>();
 
   onRecipeSelected(recipe: Recipe) {
-    this.recipeWasSelected.emit();
+    this.recipeWasSelected.emit(recipe);
   }
 }
