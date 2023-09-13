@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component, EventEmitter, Input, Output} from '@angular/core';
+import {Recipe} from "../recipe/recipe.model";
 
 @Component({
   selector: 'app-recipeitem',
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class RecipeitemComponent {
 
+  @Input() childComponentRecipe: Recipe;
+  @Output() recipeSelected = new EventEmitter<void>();
+
+  onSelected() {
+    this.recipeSelected.emit();
+  }
 }

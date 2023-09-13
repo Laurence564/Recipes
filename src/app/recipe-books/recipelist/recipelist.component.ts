@@ -8,7 +8,7 @@ import {Recipe} from "../recipe/recipe.model";
 })
 export class RecipelistComponent {
 
-  public recipes: Recipe[] = [
+  public parentRecipesList: Recipe[] = [
     new Recipe(
       'Fish & Chips',
       'A British Classic!',

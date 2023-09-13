@@ -1,1 +1,16 @@
-<p>recipeitem works!</p>
+<a
+  href="#"
+  class="list-group-item clearfix"
+  (click)="onSelected()">
+  <div class="pull-left">
+    <h4 data-cy="recipe-name" class="list-group-item-heading">{{childComponentRecipe.name}}</h4>
+    <p data-cy="recipe-description" class="list-group-item-text">{{childComponentRecipe.description}}</p>
+  </div>
+  <span class="pull-right">
+    <img
+      [src]="childComponentRecipe.imagePath"
+      alt="{{childComponentRecipe.name}}"
+      class="img-responsive"
+      style="max-height: 50px;">
+  </span>
+</a>
