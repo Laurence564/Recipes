@@ -11,7 +11,8 @@
   <div class="col-xs-12">
     <app-recipeitem
       *ngFor="let parentRecipe of parentRecipesList"
-      [childComponentRecipe]="parentRecipe">
+      [childComponentRecipe]="parentRecipe"
+      (recipeSelected)="onRecipeSelected(parentRecipe)">
     </app-recipeitem>
   </div>
 </div>
