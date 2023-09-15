@@ -9,6 +9,4 @@ import {Recipe} from "./recipe.model";
 export class RecipeComponent {
   selectedRecipe: Recipe;
 
-
-
 }

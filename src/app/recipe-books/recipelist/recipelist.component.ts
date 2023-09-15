@@ -16,7 +16,7 @@ export class RecipelistComponent {
     ),
     new Recipe(
       'Chicken Tikka Masala',
-      'A British Classic!',
+      'The British favourite!',
       'https://images.pexels.com/photos/14537690/pexels-photo-14537690.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
     )
   ];

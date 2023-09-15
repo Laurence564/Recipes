@@ -9,7 +9,7 @@ import {Recipe} from "../recipe/recipe.model";
 export class RecipeitemComponent {
 
   @Input() childComponentRecipe: Recipe;
-  @Output() recipeSelected = new EventEmitter<void>();
+  @Output() recipeSelected= new EventEmitter<void>();
 
   onSelected() {
     this.recipeSelected.emit();
