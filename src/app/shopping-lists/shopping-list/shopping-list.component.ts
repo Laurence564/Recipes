@@ -8,8 +8,13 @@ import {Ingredient} from "../../shared/ingredient.model";
 })
 export class ShoppingListComponent {
 
-  public ingredients: Ingredient[] =[
+  public ingredients: Ingredient[] = [
     new Ingredient("Fish", 1),
     new Ingredient("Potato", 2)
   ];
+
+  onIngredientAdded(ingredient:Ingredient) {
+    this.ingredients.push(ingredient);
+  }
+
 }
