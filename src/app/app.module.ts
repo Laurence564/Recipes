@@ -13,6 +13,8 @@ import {FormsModule} from "@angular/forms";
 import {HoverDirectives} from "./custom-directives/hover.directives";
 import { UnlessDirective } from './structural-directive/unless.directive';
 import { DropdownDirective } from './shared/dropdown.directive';
+import {RecipeService} from "./recipe-books/recipe/recipe.service";
+import {ShoppingListService} from "./shopping-lists/shopping-list/shoppingList.service";
 
 @NgModule({
   declarations: [
